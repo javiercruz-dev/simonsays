@@ -39,6 +39,8 @@ function checkAnswer(currentLevel) {
   } else {
     console.log("wrong");
     playSound("wrong");
+    var wrong = document.getElementById("wrong");
+wrong.volume = 0.2;
   $("body").addClass("game-over");
   setTimeout(function () {
     $("body").removeClass("game-over");
