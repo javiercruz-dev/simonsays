@@ -38,7 +38,6 @@ function checkAnswer(currentLevel) {
     }
   } else {
     console.log("wrong");
-    wrong.volume = 0.05;
     playSound("wrong");
   $("body").addClass("game-over");
   setTimeout(function () {
