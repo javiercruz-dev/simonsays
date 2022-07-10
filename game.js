@@ -39,7 +39,7 @@ function checkAnswer(currentLevel) {
   } else {
     console.log("wrong");
     playSound("wrong");
-    audio.volume = 0.2;
+    audio.volume = 0.1;
   $("body").addClass("game-over");
   setTimeout(function () {
     $("body").removeClass("game-over");
@@ -67,6 +67,7 @@ function nextSequence() {
 function playSound(name) {
   var audio = new Audio("sounds/" + name + ".mp3");
   audio.play();
+  audio.volume = 0.1;
 }
 
 function animatePress(currentColor) {
